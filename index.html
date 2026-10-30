@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Registration Form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Student Registration Form</h1>
+    <p class="subtitle">
+        Please fill in the details carefully
+    </p>
+
+    <form>
+
+        <!-- Personal Information -->
+
+        <div class="section-title">
+            Personal Information
+        </div>
+
+        <div class="form-row">
+
+            <div class="form-group">
+                <label for="fname">
+                    First Name <span class="required">*</span>
+                </label>
+                <input type="text" id="fname"
+                       placeholder="Enter first name"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label for="lname">
+                    Last Name <span class="required">*</span>
+                </label>
+                <input type="text" id="lname"
+                       placeholder="Enter last name"
+                       required>
+            </div>
+
+        </div>
+
+
+        <div class="form-row">
+
+            <div class="form-group">
+                <label for="dob">
+                    Date of Birth
+                </label>
+                <input type="date" id="dob">
+            </div>
+
+            <div class="form-group">
+                <label>Gender</label>
+
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="gender" value="male">
+                        Male
+                    </label>
+
+                    <label>
+                        <input type="radio" name="gender" value="female">
+                        Female
+                    </label>
+
+                    <label>
+                        <input type="radio" name="gender" value="other">
+                        Other
+                    </label>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Contact Information -->
+
+        <div class="section-title">
+            Contact Information
+        </div>
+
+        <div class="form-row">
+
+            <div class="form-group">
+                <label for="email">
+                    Email <span class="required">*</span>
+                </label>
+
+                <input type="email"
+                       id="email"
+                       placeholder="example@gmail.com"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">
+                    Mobile Number
+                </label>
+
+                <input type="tel"
+                       id="phone"
+                       placeholder="Enter mobile number">
+            </div>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="address">
+                Address
+            </label>
+
+            <textarea id="address"
+                      placeholder="Enter your complete address"></textarea>
+
+        </div>
+
+
+        <!-- Academic Information -->
+
+        <div class="section-title">
+            Academic Information
+        </div>
+
+        <div class="form-row">
+
+            <div class="form-group">
+
+                <label for="course">
+                    Select Course <span class="required">*</span>
+                </label>
+
+                <select id="course" required>
+
+                    <option value="">
+                        -- Select Course --
+                    </option>
+
+                    <option value="bsc">
+                        B.Sc. Mathematics
+                    </option>
+
+                    <option value="bca">
+                        BCA
+                    </option>
+
+                    <option value="bcom">
+                        B.Com
+                    </option>
+
+                    <option value="ba">
+                        B.A.
+                    </option>
+
+                    <option value="msc">
+                        M.Sc.
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="semester">
+                    Semester
+                </label>
+
+                <select id="semester">
+
+                    <option>Semester 1</option>
+                    <option>Semester 2</option>
+                    <option>Semester 3</option>
+                    <option>Semester 4</option>
+                    <option>Semester 5</option>
+                    <option>Semester 6</option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <div class="form-row">
+
+            <div class="form-group">
+
+                <label for="rollno">
+                    Roll Number
+                </label>
+
+                <input type="text"
+                       id="rollno"
+                       placeholder="Enter roll number">
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="year">
+                    Academic Year
+                </label>
+
+                <select id="year">
+
+                    <option>2026-27</option>
+                    <option>2027-28</option>
+                    <option>2028-29</option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <!-- Interests -->
+
+        <div class="section-title">
+            Areas of Interest
+        </div>
+
+        <div class="checkbox-group">
+
+            <label>
+                <input type="checkbox" name="interest" value="sports">
+                Sports
+            </label>
+
+            <label>
+                <input type="checkbox" name="interest" value="music">
+                Music
+            </label>
+
+            <label>
+                <input type="checkbox" name="interest" value="coding">
+                Coding
+            </label>
+
+            <label>
+                <input type="checkbox" name="interest" value="reading">
+                Reading
+            </label>
+
+        </div>
+
+
+        <!-- Buttons -->
+
+        <div class="buttons">
+
+            <button type="submit" class="submit-btn">
+                Register
+            </button>
+
+            <button type="reset" class="reset-btn">
+                Reset
+            </button>
+
+        </div>
+
+    </form>
+
+    <footer>
+        © 2026 Student Registration Portal
+    </footer>
+
+</div>
+
+</body>
+</html>
